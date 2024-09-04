@@ -1,0 +1,52 @@
+.skills {
+  padding: 6rem 6.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+    border-radius: 12px;
+    background: #e5e7eb;
+    color: #4b5563;
+    padding: 0.3rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    color: #4b5563;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 3rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: 100%;
+    gap: 4rem;
+
+    .js,
+    .html,
+    .react,
+    .css,
+    .node,
+    .bootstrap,
+    .vue,
+    .git {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .html img,
+    .css img,
+    .bootstrap img,
+    .vue img,
+    .git img {
+      width: 64px;
+      height: 64px;
+    }
+  }
+}

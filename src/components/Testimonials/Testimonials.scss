@@ -1,0 +1,71 @@
+.testimonials {
+  background: #f9fafb;
+  padding: 5rem 6.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+    border-radius: 12px;
+    background: #e5e7eb;
+    color: #4b5563;
+    padding: 0.3rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .main-title {
+    color: #4b5563;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 3rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+
+    .person {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      background: white;
+      --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -2px rgba(0, 0, 0, 0.1);
+      --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+        0 2px 4px -2px var(--tw-shadow-color);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      border-radius: 12px;
+      padding: 2rem;
+      height: 428px;
+
+      img {
+        width: 64px;
+        height: 64px;
+      }
+
+      .description {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: #4b5563;
+        font-weight: 300;
+        padding: 0 1.5rem;
+      }
+
+      .user-name {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        color: #111827;
+      }
+
+      .position {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: #4b5563;
+      }
+    }
+  }
+}
