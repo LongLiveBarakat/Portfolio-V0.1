@@ -6,7 +6,7 @@ import share from "../../assets/icons/share.svg";
 
 const index = () => {
   return (
-    <div className="work">
+    <div className="work" id="work">
       <span>Work</span>
       <h1 className="main-title">
         Some of the noteworthy projects I have built:

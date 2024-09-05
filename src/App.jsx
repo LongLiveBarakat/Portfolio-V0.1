@@ -8,6 +8,7 @@ import Work from "./components/Work";
 import Testimonials from "./components/Testimonials";
 import GetInTouch from "./components/GetInTouch";
 import Footer from "./components/Layout/Footer";
+import BackOnTop from "./components/BackOnTop";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Testimonials />
       <GetInTouch />
       <Footer />
+      <BackOnTop />
     </>
   );
 }

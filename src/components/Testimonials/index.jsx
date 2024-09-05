@@ -3,7 +3,7 @@ import user from "../../assets/icons/user.svg";
 
 const index = () => {
   return (
-    <div className="testimonials">
+    <div className="testimonials" id="testimonials">
       <span>Testimonials</span>
       <h1 className="main-title">Nice things people have said about me:</h1>
       <div className="container">

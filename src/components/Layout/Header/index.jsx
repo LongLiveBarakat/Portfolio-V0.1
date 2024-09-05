@@ -18,10 +18,10 @@ const Header = () => {
         <h1 className="logo"> &lt;Barakat /&gt; </h1>
         <div className="buttons">
           <div className="links">
-            <p>About</p>
-            <p>Work</p>
-            <p>Testimonials</p>
-            <p>Contact</p>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
           </div>
           <span className="separator"></span>
           <div className="light-cv">

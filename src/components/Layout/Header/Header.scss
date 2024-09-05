@@ -13,12 +13,13 @@
       display: flex;
       gap: 2rem;
 
-      p {
+      a {
         color: #4b5563;
         cursor: pointer;
+        text-decoration: none;
         transition: 0.2s all ease;
       }
-      p:hover {
+      a:hover {
         color: #111827;
       }
     }

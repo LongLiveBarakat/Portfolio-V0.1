@@ -3,7 +3,7 @@ import profile2 from "../../assets/images/profile-2.jpeg";
 
 const index = () => {
   return (
-    <div className="about-me">
+    <div className="about-me" id="about">
       <span>About Me</span>
       <div className="container">
         <div className="left-side">

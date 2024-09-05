@@ -8,7 +8,7 @@ import figma from "../../assets/icons/figma.svg";
 
 const index = () => {
   return (
-    <div className="get-touch">
+    <div className="get-touch" id="contact">
       <span>Get in touch</span>
       <h1 className="main-title">
         What’s next? Feel free to reach out to me if you are looking <br /> for

@@ -1,0 +1,23 @@
+.back-on-top {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(20px); // Start hidden with a slight downward shift
+  transition: opacity 0.3s ease, transform 0.3s ease; // Smooth transitions
+  pointer-events: none; // Disable interaction when hidden
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0); // Slide back up to its normal position
+    pointer-events: auto; // Enable interaction when visible
+  }
+}
