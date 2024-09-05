@@ -26,7 +26,9 @@ const Header = () => {
           <span className="separator"></span>
           <div className="light-cv">
             <img src={dark} alt="" />
-            <button>Download CV</button>
+            <a href="/cv.pdf" download>
+              <button>Download CV</button>
+            </a>
           </div>
         </div>
         <div className="mobile">
