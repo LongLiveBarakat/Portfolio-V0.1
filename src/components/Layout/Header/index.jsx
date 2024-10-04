@@ -62,7 +62,9 @@ const Header = () => {
                 <img src={dark} alt="" />
               </div>
               <div className="mobile-nav-button">
-                <button>Download CV</button>
+                <a href={cv} download="Mohamed Ali Barakat CV" target="_blank">
+                  <button>Download CV</button>
+                </a>
               </div>
             </div>
           </>
