@@ -14,7 +14,13 @@ const index = () => {
       <div className="container">
         <div className="single-work">
           <div className="left-side">
-            <img src={project1} alt="" />
+            <a
+              href="https://longlivebarakat.github.io/Frontend-Mentor-News-homepage/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={project1} alt="" />
+            </a>
           </div>
           <div className="right-side">
             <h1 className="title">News Homepage</h1>
@@ -62,7 +68,13 @@ const index = () => {
         </div>
         <div className="single-work single-work-reflect-second">
           <div className="left-side">
-            <img src={project2} alt="" />
+            <a
+              href="https://longlivebarakat.github.io/Bootstrap-Website/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={project2} alt="" />
+            </a>
           </div>
           <div className="right-side">
             <h1 className="title">Front End Bootcamb</h1>

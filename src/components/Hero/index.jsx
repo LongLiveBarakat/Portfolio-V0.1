@@ -1,4 +1,5 @@
 import figma from "../../assets/icons/figma.svg";
+import linkedin from "../../assets/icons/linkedin.svg";
 import github from "../../assets/icons/github.svg";
 import greenDot from "../../assets/icons/greenDot.svg";
 import location from "../../assets/icons/location.svg";
@@ -29,9 +30,18 @@ const Hero = () => {
           </div>
         </div>
         <div className="links">
-          <img src={github} alt="GitHub" />
-          <img src={twitter} alt="Twitter" />
-          <img src={figma} alt="Figma" />
+          <a href="https://github.com/LongLiveBarakat" target="blank">
+            <img src={github} alt="GitHub" />
+          </a>
+          <a href="https://x.com/MoBaraWho" target="blank">
+            <img src={twitter} alt="Twitter" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mohamed-barakat-636771228/"
+            target="blank"
+          >
+            <img src={linkedin} alt="linkedin" className="linkedin-logo" />
+          </a>
         </div>
       </div>
       <div className="right-side">

@@ -4,7 +4,7 @@ import copy from "../../assets/icons/copy.svg";
 import phone from "../../assets/icons/phone.svg";
 import github from "../../assets/icons/github.svg";
 import twitter from "../../assets/icons/twitter.svg";
-import figma from "../../assets/icons/figma.svg";
+import linkedin from "../../assets/icons/linkedin.svg";
 
 const Index = () => {
   // Function to copy text to clipboard
@@ -47,9 +47,18 @@ const Index = () => {
       <div className="links">
         <p>You may also find me on these platforms!</p>
         <div className="links-icons">
-          <img src={github} alt="GitHub" />
-          <img src={twitter} alt="Twitter" />
-          <img src={figma} alt="Figma" />
+          <a href="https://github.com/LongLiveBarakat" target="blank">
+            <img src={github} alt="GitHub" />
+          </a>
+          <a href="https://x.com/MoBaraWho" target="blank">
+            <img src={twitter} alt="Twitter" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mohamed-barakat-636771228/"
+            target="blank"
+          >
+            <img src={linkedin} alt="linked in" />
+          </a>
         </div>
       </div>
     </div>
