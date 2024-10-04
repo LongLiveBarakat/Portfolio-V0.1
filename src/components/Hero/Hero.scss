@@ -45,6 +45,10 @@
         }
       }
     }
+
+    .links {
+      display: flex;
+    }
   }
 
   .right-side {
@@ -93,6 +97,11 @@
 
     .right-side {
       order: 1;
+
+      span {
+        width: 330px;
+        left: -25px;
+      }
     }
 
     .left-side {
@@ -103,6 +112,16 @@
       h1 {
         font-weight: 600;
         font-size: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  .hero {
+    .right-side {
+      span {
+        display: none;
       }
     }
   }

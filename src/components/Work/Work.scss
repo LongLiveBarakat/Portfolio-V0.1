@@ -17,6 +17,7 @@
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 3rem;
+    text-align: center;
   }
 
   .container {
@@ -33,6 +34,7 @@
       box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
         var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
       border-radius: 12px;
+      background: #ffffff;
 
       .left-side {
         width: 50%;
@@ -44,8 +46,9 @@
         padding: 3rem 0;
 
         img {
-          width: 520px;
-          height: 348px;
+          width: 100%;
+          max-width: 520px;
+          height: auto;
           box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
             var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
           border-radius: 12px;
@@ -53,6 +56,7 @@
           transition: 0.5s all ease;
           object-fit: contain;
         }
+
         img:hover {
           transform: scale(1.05);
         }
@@ -95,6 +99,7 @@
           padding: 0.4rem;
           border-radius: 5px;
         }
+
         .share:hover {
           background: #f9fafb;
         }
@@ -104,28 +109,133 @@
     .single-work-reflect-first {
       display: flex;
       flex-direction: row-reverse;
-
-      .right-side {
-        .share {
-          cursor: pointer;
-          padding: 0.4rem;
-          border-radius: 5px;
-        }
-        .share:hover {
-          background: #f9fafb;
-        }
-      }
     }
 
     .single-work-reflect-second {
-      .right-side {
-        .share {
-          cursor: pointer;
-          padding: 0.4rem;
-          border-radius: 5px;
+      display: flex;
+      /* flex-direction: column; */
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding: 3rem 5rem;
+
+    .main-title {
+      font-size: 18px;
+    }
+
+    .container {
+      gap: 3rem;
+
+      .single-work {
+        flex-direction: column;
+
+        .left-side {
+          width: 100%;
+          padding: 2rem 0;
+
+          img {
+            width: 100%;
+          }
         }
-        .share:hover {
-          background: #f9fafb;
+
+        .right-side {
+          width: 100%;
+          padding: 2rem;
+          text-align: center;
+
+          .title {
+            font-size: 18px;
+          }
+
+          .description {
+            font-size: 0.9rem;
+          }
+
+          .stacks {
+            justify-content: center;
+
+            span {
+              padding: 0.2rem 1rem;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      .single-work-reflect-first {
+        flex-direction: column;
+      }
+
+      .single-work-reflect-second {
+        flex-direction: column;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+
+    .main-title {
+      font-size: 16px;
+    }
+
+    .container {
+      gap: 2rem;
+
+      .single-work {
+        .left-side {
+          padding: 1.5rem 0;
+        }
+
+        .right-side {
+          padding: 1.5rem;
+
+          .title {
+            font-size: 16px;
+          }
+
+          .description {
+            font-size: 0.85rem;
+          }
+
+          .stacks {
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 1rem;
+
+    .main-title {
+      font-size: 14px;
+    }
+
+    .container {
+      gap: 1.5rem;
+
+      .single-work {
+        .right-side {
+          padding: 1rem;
+
+          .title {
+            font-size: 14px;
+          }
+
+          .description {
+            font-size: 0.8rem;
+          }
+
+          .stacks {
+            span {
+              font-size: 10px;
+            }
+          }
         }
       }
     }

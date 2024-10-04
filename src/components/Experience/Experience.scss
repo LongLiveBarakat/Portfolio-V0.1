@@ -16,7 +16,7 @@
 
   .main-title {
     color: #4b5563;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 300;
     margin-bottom: 3rem;
   }
@@ -31,8 +31,6 @@
     .single-experience {
       --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
         0 2px 4px -2px rgba(0, 0, 0, 0.1);
-      --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
-        0 2px 4px -2px var(--tw-shadow-color);
       box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
         var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
       border-radius: 12px;
@@ -42,27 +40,13 @@
       width: 75%;
       background: white;
 
-      .upwork {
-        width: 102px;
-        height: 28px;
-      }
-
-      .google {
-        width: 102px;
-        height: 40px;
-        object-fit: cover;
-      }
-
-      .egyptfwd {
-        width: 102px;
-        height: 28px;
-        object-fit: cover;
-      }
-
+      .upwork,
+      .google,
+      .egyptfwd,
       .iti {
         width: 102px;
-        height: 42px;
-        object-fit: cover;
+        height: auto;
+        object-fit: contain;
       }
 
       .content {
@@ -70,7 +54,7 @@
 
         .title {
           color: #111827;
-          font-size: 20px;
+          font-size: 1.25rem;
           font-weight: 600;
           margin-bottom: 1.5rem;
         }
@@ -82,6 +66,88 @@
             color: #4b5563;
           }
         }
+      }
+
+      .history {
+        color: #6b7280;
+        font-size: 1rem;
+        text-align: right;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .experience {
+    padding: 4rem 3rem;
+
+    .container .single-experience {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 85%;
+
+      .content {
+        width: 100%;
+      }
+
+      .history {
+        font-size: 0.95rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 3rem 2rem;
+
+    .main-title {
+      font-size: 1.1rem;
+    }
+
+    .container .single-experience {
+      padding: 1.5rem;
+      width: 100%;
+
+      .content .title {
+        font-size: 1.1rem;
+      }
+
+      .content ul li {
+        font-size: 0.95rem;
+      }
+
+      .history {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .experience {
+    padding: 2rem 1rem;
+
+    .main-title {
+      font-size: 1rem;
+    }
+
+    .container .single-experience {
+      padding: 1rem;
+      width: 100%;
+
+      .content .title {
+        font-size: 1rem;
+      }
+
+      .content ul li {
+        font-size: 0.9rem;
+      }
+
+      .history {
+        font-size: 0.85rem;
       }
     }
   }
