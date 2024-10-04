@@ -25,7 +25,7 @@ const Header = () => {
           </div>
           <span className="separator"></span>
           <div className="light-cv">
-            <img src={dark} alt="" />
+            {/* <img src={dark} alt="" /> */}
             <a href={cv} download="Mohamed Ali Barakat CV" target="_blank">
               <button>Download CV</button>
             </a>
@@ -57,10 +57,10 @@ const Header = () => {
                   Contact
                 </a>
               </div>
-              <div className="mobile-nav-theme">
+              {/* <div className="mobile-nav-theme">
                 <p>Switch Theme</p>
                 <img src={dark} alt="" />
-              </div>
+              </div> */}
               <div className="mobile-nav-button">
                 <a href={cv} download="Mohamed Ali Barakat CV" target="_blank">
                   <button>Download CV</button>
